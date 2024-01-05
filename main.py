@@ -1,9 +1,6 @@
-#!/usr/bin/python3
-# *coding=utf-8* #
-
 import contextlib
-from seleniums import *
-from systems import *
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 from login import login
 from random import randint
 from random import sample
@@ -98,11 +95,10 @@ def select_page() -> None:
 def main() -> None:
     global driver, catalog_name, working_catalog_index
 
-    print("欢迎使用深技大自动评教软件，本软件仅供学习使用")
-    print("")
-    print("Github仓库地址：")
+    print("欢迎使用深技大自动评教软件，本软件无毒绿色，不会盗取个人信息，仅供学习使用")
+    print("Github仓库地址：https://github.com/DDL-IN-MY-AGENDA/Auto-evaluate-of-SZTU.git")
     driver_type = int(input("请输入你的浏览器类型（Edge:输入0，Chrome:输入1）："))
-    print(f"使用本软件之前请关闭你的{'Chrome' if driver_type else 'Edge'}浏览器")
+    print("使用本软件之前请关闭你的浏览器")
     print("浏览器启动中...")
     if driver_type:
         options = webdriver.ChromeOptions()
