@@ -1,5 +1,5 @@
 Auto-evalate-of SZTU
-
+教务系统自动评教
 基于git@github.com:Xeler-ync/SZTU-ZDPJ.git原项目改写，更具有随机性，最近适配：2023-2024学年
 
 - 支持选择Edge/Chrome浏览器
